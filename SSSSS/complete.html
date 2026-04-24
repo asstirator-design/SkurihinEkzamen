@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завершение курса - Blender Sprint</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">Blender <span>Sprint</span></div>
+        <nav class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="day-7.html">День 7</a>
+          <a class="btn btn-outline" href="day-0.html">Снова пройти</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="day-title">Курс завершен</h1>
+
+        <div class="completion-gallery">
+          <img src="img/0.png" alt="День 0" />
+          <img src="img/1.png" alt="День 1" />
+          <img src="img/2.png" alt="День 2" />
+          <img src="img/22.png" alt="День 2 дополнительная" />
+          <img src="img/3.png" alt="День 3" />
+          <img src="img/32.png" alt="День 3 дополнительная" />
+          <img src="img/4.png" alt="День 4" />
+          <img id="complete-animated-img" src="img/5.png" alt="День 5" />
+          <img src="img/6.png" alt="День 6" />
+          <img src="img/7.png" alt="День 7" />
+        </div>
+
+        <div class="card">
+          <h2>Поздравляю с прохождением спринта</h2>
+          <p>
+            Ты прошел весь путь от знакомства с Blender до финального рендера.
+            Это отличный фундамент для следующих, более сложных проектов.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Blender Sprint · Завершение</div>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+      (() => {
+        const animatedImg = document.getElementById("complete-animated-img");
+        if (!animatedImg) return;
+
+        const frames = ["img/5.png", "img/2.png"];
+        let frameIndex = 0;
+
+        setInterval(() => {
+          frameIndex = (frameIndex + 1) % frames.length;
+          animatedImg.src = frames[frameIndex];
+        }, 500);
+      })();
+    </script>
+  </body>
+</html>

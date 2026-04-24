@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>День 6 - Blender Sprint</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">Blender <span>Sprint</span></div>
+        <nav class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="day-5.html">День 5</a>
+          <a href="day-7.html">День 7</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 20px;">
+      <img class="hero-img" src="img/6.png" />
+    </div>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="day-title">День 6 — Камера и свет (Eevee)</h1>
+        <p class="note">
+          На этом этапе ты сделаешь сцену визуально завершенной: настроишь камеру,
+          композицию, освещение и добавишь анимацию камеры.
+        </p>
+    
+        <h2>Камера</h2>
+        <p>
+          Камера определяет, что именно будет видно в финальном рендере.
+        </p>
+    
+        <h3>Добавление камеры</h3>
+        <ol class="list">
+          <li>Нажми Shift + A</li>
+          <li>Выбери Camera</li>
+        </ol>
+    
+        <h3>Вид камеры</h3>
+        <ul class="list">
+          <li>Numpad 0 — переход в вид камеры</li>
+        </ul>
+    
+        <h3>Перемещение камеры</h3>
+        <ul class="list">
+          <li>G — перемещение</li>
+          <li>R — вращение</li>
+        </ul>
+    
+        <h3>Удобная настройка (Lock Camera to View)</h3>
+        <ol class="list">
+          <li>Перейди в вид камеры (Numpad 0)</li>
+          <li>Нажми N → вкладка View</li>
+          <li>Включи Lock Camera to View</li>
+        </ol>
+        <p>
+          Теперь двигая сцену, ты двигаешь камеру. После настройки отключи эту опцию.
+        </p>
+    
+        <h2>Композиция кадра</h2>
+        <p>Важно, как расположены объекты в кадре.</p>
+    
+        <ul class="list">
+          <li>главный объект должен быть хорошо виден</li>
+          <li>не обрезай важные части</li>
+          <li>оставляй пространство перед движением</li>
+          <li>избегай слишком пустого или перегруженного кадра</li>
+          <li>смещай объект немного от центра</li>
+        </ul>
+    
+        <h2>Свет (Eevee)</h2>
+        <p>
+          Свет влияет на видимость, атмосферу и объем сцены.
+        </p>
+    
+        <p>Выбери Render Engine: <strong>Eevee</strong>.</p>
+    
+        <h3>Типы источников света</h3>
+        <ul class="list">
+          <li>Point — свет во все стороны</li>
+          <li>Sun — направленный свет</li>
+          <li>Area — мягкий свет</li>
+          <li>Spot — направленный луч</li>
+        </ul>
+    
+        <h2>Базовая схема освещения</h2>
+    
+        <h3>Основной свет</h3>
+        <ul class="list">
+          <li>Sun или Area Light</li>
+          <li>расположи сбоку и немного сверху</li>
+        </ul>
+    
+        <h3>Дополнительный свет</h3>
+        <ul class="list">
+          <li>слабее основного</li>
+          <li>с противоположной стороны</li>
+          <li>смягчает тени</li>
+        </ul>
+    
+        <h3>Задний свет (по желанию)</h3>
+        <ul class="list">
+          <li>расположен сзади</li>
+          <li>выделяет силуэт</li>
+          <li>добавляет объем</li>
+        </ul>
+    
+        <h3>Настройка света</h3>
+        <ul class="list">
+          <li>Power — сила света</li>
+          <li>Color — цвет</li>
+          <li>Size — мягкость (для Area)</li>
+        </ul>
+    
+        <p>
+          Не делай сцену слишком темной или слишком яркой — экспериментируй.
+        </p>
+    
+        <h2>Тени</h2>
+        <ul class="list">
+          <li>проверь, включены ли тени</li>
+          <li>убедись, что они не слишком резкие</li>
+        </ul>
+    
+        <h2>Анимация камеры</h2>
+    
+        <h3>Шаг 1 — начальная позиция</h3>
+        <ul class="list">
+          <li>Кадр 1</li>
+          <li>настрой камеру</li>
+          <li>I → Location + Rotation</li>
+        </ul>
+    
+        <h3>Шаг 2 — движение</h3>
+        <ul class="list">
+          <li>Кадр 120 (или другой)</li>
+          <li>перемести и поверни камеру</li>
+          <li>снова I → Location + Rotation</li>
+        </ul>
+    
+        <p>Камера будет двигаться во времени.</p>
+    
+        <h3>Варианты движения</h3>
+        <ul class="list">
+          <li>облет персонажа</li>
+          <li>движение вперед/назад</li>
+          <li>смена ракурса</li>
+        </ul>
+    
+        <h2>Проверка сцены</h2>
+        <ul class="list">
+          <li>персонаж хорошо виден</li>
+          <li>свет настроен корректно</li>
+          <li>камера показывает нужный кадр</li>
+          <li>анимация читается</li>
+        </ul>
+    
+        <h2>Что важно запомнить</h2>
+        <ul class="list">
+          <li>камера определяет финальный кадр</li>
+          <li>свет делает сцену читаемой</li>
+          <li>даже простая сцена выглядит лучше с освещением</li>
+          <li>движение камеры усиливает эффект</li>
+        </ul>
+    
+        <h2>Задание</h2>
+        <ol class="list">
+          <li>Добавь и настрой камеру</li>
+          <li>Выставь композицию</li>
+          <li>Настрой освещение (основной + дополнительный)</li>
+          <li>При желании добавь задний свет</li>
+          <li>Анимируй камеру</li>
+        </ol>
+    
+        <h2>Итог дня</h2>
+        <ul class="list">
+          <li>есть настроенная камера</li>
+          <li>есть освещение сцены</li>
+          <li>есть анимация камеры</li>
+          <li>сцена выглядит завершенной</li>
+        </ul>
+    
+        <p>
+          На следующем этапе ты сделаешь финальный рендер и получишь готовое видео.
+        </p>
+        <div class="lesson-next">
+          <a class="btn lesson-next-btn" href="day-7.html">Следующий урок</a>
+          <img class="lesson-next-preview" src="img/7.png" alt="Превью следующего урока" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">День 6 из 7 · Blender Sprint</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

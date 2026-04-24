@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>День 3 - Blender Sprint</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">Blender <span>Sprint</span></div>
+        <nav class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="day-2.html">День 2</a>
+          <a href="day-4.html">День 4</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container images-row">
+      <img class="hero-img" src="img/3.png" />
+      <img class="hero-img" src="img/32.png" />
+    </div>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="day-title">День 3 - Подготовка меша, скелет и Weight Paint</h1>
+        <p class="note">
+          Сегодня подготовка модели к анимации: проверка меша, создание арматуры,
+          привязка к костям и исправление деформаций через веса.
+        </p>
+    
+        <h2>Подготовка меша</h2>
+        <ul class="list">
+          <li>проверь простоту и читаемость формы</li>
+          <li>для каждого объекта: Ctrl + A → All Transforms</li>
+          <li>проверь origin: Origin to Geometry при необходимости</li>
+          <li>убедись, что масштаб модели адекватный</li>
+        </ul>
+    
+        <h2>Создание арматуры</h2>
+        <ol class="list">
+          <li>Shift + A → Armature → Single Bone</li>
+          <li>Включи In Front в Object Data</li>
+          <li>Tab в Edit Mode арматуры</li>
+          <li>Построй кости: позвоночник, голова, руки, ноги</li>
+        </ol>
+    
+        <h2>Привязка модели к скелету</h2>
+        <ol class="list">
+          <li>Выдели части модели</li>
+          <li>Shift + клик по арматуре (последней)</li>
+          <li>Ctrl + P → With Automatic Weights</li>
+        </ol>
+    
+        <h2>Проверка в Pose Mode</h2>
+        <ul class="list">
+          <li>выдели арматуру, включи Pose Mode</li>
+          <li>выбери кость и вращай (R)</li>
+          <li>проверь, что меш движется вместе с костями</li>
+        </ul>
+    
+        <h2>Weight Paint</h2>
+        <div class="card">
+          <ul class="list">
+            <li>красный - сильное влияние кости, синий - нет</li>
+            <li>исправляй явные ошибки: руки не тянут корпус и т.д.</li>
+            <li>Add - добавить вес, Subtract - убрать</li>
+            <li>на этом этапе не нужен идеальный результат</li>
+          </ul>
+        </div>
+    
+        <h2>Итог дня</h2>
+        <ul class="list">
+          <li>есть персонаж со скелетом</li>
+          <li>есть рабочая привязка модели к костям</li>
+          <li>есть базовый опыт исправления деформаций</li>
+        </ul>
+    
+        <!-- ДОБАВЛЕННЫЙ РАСШИРЕННЫЙ БЛОК -->
+    
+        <h2>Суть урока</h2>
+        <p>
+          На этом этапе ты подготавливаешь модель к анимации.
+        </p>
+        <ul class="list">
+          <li>проверка и упрощение меша</li>
+          <li>создание скелета (арматуры)</li>
+          <li>привязка модели к костям</li>
+          <li>исправление деформаций через веса</li>
+        </ul>
+    
+        <p>
+          В конце урока персонаж уже должен двигаться, даже если не идеально.
+        </p>
+    
+        <h2>Подготовка меша (важно)</h2>
+    
+        <h3>Проверка структуры</h3>
+        <ul class="list">
+          <li>модель не должна быть слишком сложной</li>
+          <li>форма должна быть читаемой</li>
+          <li>несколько объектов — это нормально</li>
+        </ul>
+    
+        <h3>Применение трансформаций</h3>
+        <p>Для каждого объекта:</p>
+        <ol class="list">
+          <li>Ctrl + A</li>
+          <li>All Transforms</li>
+        </ol>
+        <p>Это фиксирует масштаб, поворот и позицию.</p>
+    
+        <h3>Центр объекта</h3>
+        <ul class="list">
+          <li>Object → Set Origin → Origin to Geometry</li>
+        </ul>
+    
+        <h3>Проверка масштаба</h3>
+        <ul class="list">
+          <li>модель не должна быть слишком маленькой</li>
+          <li>и не слишком большой</li>
+        </ul>
+    
+        <h2>Создание скелета (Armature)</h2>
+    
+        <h3>Добавление арматуры</h3>
+        <ol class="list">
+          <li>Shift + A</li>
+          <li>Armature → Single Bone</li>
+        </ol>
+    
+        <h3>Видимость сквозь модель</h3>
+        <ul class="list">
+          <li>Object Data Properties → In Front</li>
+        </ul>
+    
+        <h3>Edit Mode</h3>
+        <ul class="list">
+          <li>Tab → редактирование костей</li>
+        </ul>
+    
+        <h3>Построение скелета</h3>
+        <ul class="list">
+          <li>позвоночник</li>
+          <li>голова</li>
+          <li>руки</li>
+          <li>ноги</li>
+        </ul>
+    
+        <p>Создание костей: E (Extrude)</p>
+    
+        <h2>Привязка к скелету</h2>
+        <ol class="list">
+          <li>Выдели модель</li>
+          <li>Shift + клик арматура</li>
+          <li>Ctrl + P</li>
+          <li>With Automatic Weights</li>
+        </ol>
+    
+        <h2>Проверка</h2>
+        <ol class="list">
+          <li>Pose Mode</li>
+          <li>Выбор кости</li>
+          <li>R → вращение</li>
+        </ol>
+    
+        <p>Если всё правильно — модель движется вместе со скелетом.</p>
+    
+        <h2>Проблемы</h2>
+        <ul class="list">
+          <li>деформации — это нормально</li>
+          <li>геометрия может ломаться</li>
+          <li>это исправляется весами</li>
+        </ul>
+    
+        <h2>Weight Paint</h2>
+    
+        <h3>Суть</h3>
+        <ul class="list">
+          <li>красный — сильное влияние</li>
+          <li>синий — отсутствует влияние</li>
+        </ul>
+    
+        <h3>Как работать</h3>
+        <ol class="list">
+          <li>выбери меш</li>
+          <li>Weight Paint Mode</li>
+          <li>выбери кость</li>
+          <li>рисуй влияние</li>
+        </ol>
+    
+        <h3>Инструменты</h3>
+        <ul class="list">
+          <li>Add — увеличить влияние</li>
+          <li>Subtract — уменьшить</li>
+        </ul>
+    
+        <h3>Что исправлять</h3>
+        <ul class="list">
+          <li>руки не должны тянуть корпус</li>
+          <li>ноги не должны влиять на верх</li>
+          <li>голова должна быть изолирована</li>
+        </ul>
+    
+        <h2>Упрощение</h2>
+        <p>
+          Не нужно идеального результата.
+          Главное — убрать явные ошибки.
+        </p>
+    
+        <h2>Задание</h2>
+        <ol class="list">
+          <li>Ctrl + A для всех объектов</li>
+          <li>создать арматуру</li>
+          <li>построить базовый скелет</li>
+          <li>Ctrl + P → Automatic Weights</li>
+          <li>проверить в Pose Mode</li>
+          <li>исправить весами основные проблемы</li>
+        </ol>
+    
+        <h2>Итог</h2>
+        <ul class="list">
+          <li>есть скелет персонажа</li>
+          <li>модель привязана к костям</li>
+          <li>базовая деформация работает</li>
+          <li>есть понимание weight paint</li>
+        </ul>
+    
+        <div class="lesson-next">
+          <a class="btn lesson-next-btn" href="day-4.html">Следующий урок</a>
+          <img class="lesson-next-preview" src="img/4.png" alt="Превью следующего урока" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">День 3 из 7 · Blender Sprint</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

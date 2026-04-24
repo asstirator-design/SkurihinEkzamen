@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>День 7 - Blender Sprint</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">Blender <span>Sprint</span></div>
+        <nav class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="day-6.html">День 6</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 20px;">
+      <img class="hero-img" src="img/7.png" />
+    </div>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="day-title">День 7 — Финальный рендер, настройка и экспорт</h1>
+        <p class="note">
+          Финальный этап курса. Ты настроишь рендер, выберешь качество,
+          используешь Cycles и экспортируешь анимацию в готовое видео.
+          В конце у тебя будет законченный ролик.
+        </p>
+    
+        <h2>Что такое рендер</h2>
+        <p>
+          Рендер — это процесс превращения 3D-сцены в изображение или видео.
+          То, что ты видишь во Viewport — это предпросмотр.
+          Финальный результат создается через рендер.
+        </p>
+    
+        <h2>Рендер и Cycles</h2>
+        <p>
+          Cycles — это более реалистичный рендер-движок по сравнению с Eevee.
+        </p>
+        <ul class="list">
+          <li>Render Engine → Cycles</li>
+          <li>Device: GPU (если доступен) или CPU</li>
+        </ul>
+    
+        <h2>Основные настройки рендера</h2>
+        <p>Открой вкладку <strong>Render Properties</strong>.</p>
+    
+        <h3>Device (устройство)</h3>
+        <ul class="list">
+          <li>CPU — рендер через процессор</li>
+          <li>GPU — через видеокарту (быстрее)</li>
+        </ul>
+    
+        <h3>Sampling (качество)</h3>
+        <ul class="list">
+          <li>Viewport Samples — для предпросмотра</li>
+          <li>Render Samples — для финального рендера</li>
+          <li>рекомендуется: 64–256 для простой сцены</li>
+          <li>чем больше значение — тем лучше качество и дольше рендер</li>
+        </ul>
+    
+        <h3>Свет (Light)</h3>
+        <ul class="list">
+          <li>проверь освещение сцены</li>
+          <li>убедись, что нет слишком темных зон</li>
+          <li>в Cycles сцена может выглядеть темнее, чем в Eevee</li>
+        </ul>
+    
+        <h2>Output настройки</h2>
+        <p>Перейди во вкладку <strong>Output Properties</strong>.</p>
+    
+        <h3>Разрешение</h3>
+        <ul class="list">
+          <li>Resolution: например 1920×1080</li>
+          <li>Frame Rate: 24 или 30 fps</li>
+        </ul>
+    
+        <h3>Формат видео</h3>
+        <ul class="list">
+          <li>File Format: FFmpeg Video</li>
+          <li>Container: MPEG-4</li>
+          <li>Video Codec: H.264</li>
+        </ul>
+    
+        <h3>Путь сохранения</h3>
+        <ul class="list">
+          <li>Укажи папку в Output</li>
+        </ul>
+    
+        <h2>Проверка перед финальным рендером</h2>
+        <ul class="list">
+          <li>камера показывает нужный кадр</li>
+          <li>анимация воспроизводится корректно</li>
+          <li>свет настроен правильно</li>
+          <li>нет лишних объектов в кадре</li>
+          <li>верный диапазон Start / End</li>
+        </ul>
+    
+        <h2>Запуск рендера</h2>
+        <ul class="list">
+          <li>Render → Render Animation</li>
+          <li>или Ctrl + F12</li>
+          <li>Blender будет рендерить каждый кадр</li>
+        </ul>
+    
+        <h2>Если что-то пошло не так</h2>
+        <ul class="list">
+          <li>уменьши samples (качество)</li>
+          <li>проверь путь сохранения</li>
+          <li>убедись, что хватает памяти</li>
+        </ul>
+    
+        <h2>Просмотр результата</h2>
+        <ul class="list">
+          <li>открой папку с рендером</li>
+          <li>запусти итоговое видео</li>
+        </ul>
+    
+        <h2>Оптимизация</h2>
+        <ul class="list">
+          <li>уменьшить samples</li>
+          <li>снизить разрешение</li>
+          <li>упростить освещение</li>
+        </ul>
+    
+        <h2>Что важно запомнить</h2>
+        <ul class="list">
+          <li>Cycles дает более реалистичный результат</li>
+          <li>качество зависит от samples</li>
+          <li>рендер анимации — это последовательность кадров</li>
+          <li>формат вывода нужно настроить заранее</li>
+        </ul>
+    
+        <h2>Задание</h2>
+        <ol class="list">
+          <li>Переключись на Cycles</li>
+          <li>Настрой качество (samples)</li>
+          <li>Выставь разрешение и формат видео</li>
+          <li>Укажи папку сохранения</li>
+          <li>Проверь сцену</li>
+          <li>Запусти рендер анимации</li>
+        </ol>
+    
+        <h2>Итог дня и курса</h2>
+        <ul class="list">
+          <li>есть финальный отрендеренный ролик</li>
+          <li>завершен полный цикл работы</li>
+          <li>есть первый законченный проект</li>
+          <li>понимание полного процесса создания анимации</li>
+        </ul>
+    
+        <p>
+          Ты прошел путь от установки Blender до собственной 3D-анимации.
+          Теперь у тебя есть база, чтобы двигаться дальше.
+        </p>
+        <div class="lesson-next">
+          <a class="btn lesson-next-btn" href="complete.html">Завершить курс</a>
+          <img class="lesson-next-preview" src="img/7.png" alt="Финальный урок" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">День 7 из 7 · Blender Sprint</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

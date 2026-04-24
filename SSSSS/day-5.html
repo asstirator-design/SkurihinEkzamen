@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>День 5 - Blender Sprint</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">Blender <span>Sprint</span></div>
+        <nav class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="day-4.html">День 4</a>
+          <a href="day-6.html">День 6</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container" style="margin-top: 20px;">
+      <img id="day5-hero-img" class="hero-img" src="img/5.png" />
+    </div>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="day-title">День 5 — Анимация: основы, объекты и персонаж</h1>
+        <p class="note">
+          На этом этапе ты начинаешь анимировать: работаешь с ключевыми кадрами,
+          создаешь движение объектов и пробуешь базовую анимацию персонажа.
+        </p>
+    
+        <h2>Что такое анимация</h2>
+        <p>
+          Анимация — это изменение параметров объекта во времени.
+          В Blender это делается через ключевые кадры (keyframes).
+        </p>
+        <p>
+          Ты задаешь состояние объекта (позицию, вращение, масштаб) в разных кадрах,
+          а Blender автоматически создает движение между ними.
+        </p>
+    
+        <h2>Timeline (временная шкала)</h2>
+        <ul class="list">
+          <li>находится внизу интерфейса</li>
+          <li>Start Frame — начало анимации</li>
+          <li>End Frame — конец анимации</li>
+          <li>пример: 0–120 кадров</li>
+        </ul>
+    
+        <h2>Keyframes (ключевые кадры)</h2>
+        <p>Ключевой кадр — это сохраненное состояние объекта.</p>
+    
+        <h3>Добавление keyframe</h3>
+        <ol class="list">
+          <li>Выдели объект</li>
+          <li>Нажми I</li>
+          <li>Выбери Location / Rotation / Scale / LocRotScale</li>
+        </ol>
+    
+        <h3>Пример</h3>
+        <ul class="list">
+          <li>Кадр 1 → позиция → I → Location</li>
+          <li>Кадр 60 → перемещение объекта</li>
+          <li>снова I → Location</li>
+        </ul>
+        <p>В результате объект начинает двигаться.</p>
+    
+        <h2>Анимация простого объекта</h2>
+    
+        <h3>Движение куба</h3>
+        <ul class="list">
+          <li>Кадр 1 → начальная позиция → I → Location</li>
+          <li>Кадр 60 → перемести куб</li>
+          <li>I → Location</li>
+        </ul>
+    
+        <h3>Добавление вращения</h3>
+        <ul class="list">
+          <li>в другом кадре нажми R</li>
+          <li>затем I → Rotation</li>
+        </ul>
+    
+        <h2>Базовые принципы анимации</h2>
+    
+        <h3>Тайминг</h3>
+        <ul class="list">
+          <li>мало кадров → быстрое движение</li>
+          <li>много кадров → медленное движение</li>
+        </ul>
+    
+        <h3>Поза</h3>
+        <ul class="list">
+          <li>каждое движение состоит из поз</li>
+          <li>позы должны быть читаемыми</li>
+        </ul>
+    
+        <h3>Плавность</h3>
+        <ul class="list">
+          <li>резкие движения выглядят неестественно</li>
+          <li>лучше использовать постепенные переходы</li>
+        </ul>
+    
+        <h2>Анимация персонажа</h2>
+        <p>
+          Важно: ты анимируешь не меш, а кости (арматуру).
+        </p>
+    
+        <h3>Подготовка</h3>
+        <ul class="list">
+          <li>выдели арматуру</li>
+          <li>перейди в Pose Mode</li>
+        </ul>
+    
+        <h3>Начальная поза</h3>
+        <ul class="list">
+          <li>Кадр 1 — нейтральная поза</li>
+          <li>A → I → LocRot</li>
+        </ul>
+    
+        <h3>Движение вперед</h3>
+        <ul class="list">
+          <li>Кадр 60 — перемести персонажа вперед</li>
+          <li>I → Location</li>
+        </ul>
+    
+        <h2>Упрощенные движения</h2>
+    
+        <h3>Ходьба</h3>
+        <ul class="list">
+          <li>чередование ног</li>
+          <li>перенос веса</li>
+          <li>легкое движение корпуса</li>
+        </ul>
+    
+        <h3>Бег</h3>
+        <ul class="list">
+          <li>быстрее ходьбы</li>
+          <li>больше амплитуда</li>
+          <li>есть момент “в воздухе”</li>
+        </ul>
+    
+        <h3>Прыжок</h3>
+        <ul class="list">
+          <li>присед</li>
+          <li>отталкивание</li>
+          <li>полет</li>
+          <li>приземление</li>
+        </ul>
+    
+        <h2>Проверка анимации</h2>
+        <ul class="list">
+          <li>нажми Play или Space</li>
+          <li>проверь движение персонажа</li>
+          <li>при необходимости скорректируй ключи</li>
+        </ul>
+    
+        <h2>Что важно запомнить</h2>
+        <ul class="list">
+          <li>анимация строится на keyframes</li>
+          <li>движение — это последовательность поз</li>
+          <li>сначала простое, потом сложное</li>
+          <li>идеал не нужен — нужен результат</li>
+        </ul>
+    
+        <h2>Задание</h2>
+        <ol class="list">
+          <li>Сделай перемещение персонажа</li>
+          <li>Добавь ходьбу</li>
+          <li>Добавь бег</li>
+          <li>Добавь прыжок</li>
+          <li>(по желанию) добавь любое действие</li>
+        </ol>
+    
+        <h2>Итог дня</h2>
+        <ul class="list">
+          <li>есть первая анимация персонажа</li>
+          <li>есть понимание keyframes</li>
+          <li>персонаж двигается в сцене</li>
+          <li>есть базовый контроль анимации</li>
+        </ul>
+    
+        <div class="lesson-next">
+          <a class="btn lesson-next-btn" href="day-6.html">Следующий урок</a>
+          <img class="lesson-next-preview" src="img/6.png" alt="Превью следующего урока" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">День 5 из 7 · Blender Sprint</div>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+      (() => {
+        const heroImg = document.getElementById("day5-hero-img");
+        if (!heroImg) return;
+
+        const frames = ["img/5.png", "img/2.png"];
+        let frameIndex = 0;
+
+        setInterval(() => {
+          frameIndex = (frameIndex + 1) % frames.length;
+          heroImg.src = frames[frameIndex];
+        }, 500);
+      })();
+    </script>
+  </body>
+</html>
