@@ -28,6 +28,42 @@
     requestAnimationFrame(tick);
   };
 
+  const openBtn = document.getElementById("openVideo");
+const modal = document.getElementById("videoModal");
+const closeBtn = document.getElementById("closeVideo");
+
+openBtn.addEventListener("click", () => {
+  modal.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
+});
+
+const openImage = document.getElementById("openImage");
+const imageModal = document.getElementById("imageModal");
+const closeImage = document.getElementById("closeImage");
+
+openImage.addEventListener("click", () => {
+  imageModal.classList.add("active");
+});
+
+closeImage.addEventListener("click", () => {
+  imageModal.classList.remove("active");
+});
+
+imageModal.addEventListener("click", (e) => {
+  if (e.target === imageModal) {
+    imageModal.classList.remove("active");
+  }
+});
+
   window.addEventListener("mousemove", updatePointer, { passive: true });
   window.addEventListener("touchmove", (event) => {
     const touch = event.touches && event.touches[0];

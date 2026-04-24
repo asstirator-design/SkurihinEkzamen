@@ -30,6 +30,24 @@
           Сегодня подготовка модели к анимации: проверка меша, создание арматуры,
           привязка к костям и исправление деформаций через веса.
         </p>
+
+        <h2>Видеоурок</h2>
+
+<div class="video-preview" id="openVideo">
+  <div class="video-play">▶</div>
+  <img src="img/video-preview.jpg" alt="Видео превью" />
+</div>
+
+<!-- Модальное окно -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <button class="video-close" id="closeVideo">✕</button>
+
+    <div class="fake-player">
+      <div class="fake-screen">Видеоурок Blender Sprint</div>
+    </div>
+  </div>
+</div>
     
         <h2>Подготовка меша</h2>
         <ul class="list">
@@ -54,6 +72,18 @@
           <li>Ctrl + P → With Automatic Weights</li>
         </ol>
     
+        <div class="image-preview" id="openImage">
+          <img src="img/BlenderSkeleton.jpg" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/BlenderSkeleton.jpg" alt="Большое изображение" />
+          </div>
+        </div>
+
         <h2>Проверка в Pose Mode</h2>
         <ul class="list">
           <li>выдели арматуру, включи Pose Mode</li>
@@ -71,6 +101,18 @@
           </ul>
         </div>
     
+        <div class="image-preview" id="openImage">
+          <img src="img/bw.webp" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/bw.webp" alt="Большое изображение" />
+          </div>
+        </div>
+
         <h2>Итог дня</h2>
         <ul class="list">
           <li>есть персонаж со скелетом</li>
@@ -229,8 +271,12 @@
         </ul>
     
         <div class="lesson-next">
-          <a class="btn lesson-next-btn" href="day-4.html">Следующий урок</a>
-          <img class="lesson-next-preview" src="img/4.png" alt="Превью следующего урока" />
+          <a class="btn btn-outline" href="assignments.html">Сдать задание</a>
+        
+          <div class="lesson-next-right">
+            <img class="lesson-next-preview" src="img/4.png" alt="Превью следующего урока" />
+            <a class="btn lesson-next-btn" href="day-4.html">Следующий урок</a>
+          </div>
         </div>
       </div>
     </main>

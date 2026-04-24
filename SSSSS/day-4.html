@@ -30,6 +30,24 @@
           Цель дня - сделать риг удобным для анимации: понять FK/IK, добавить
           контроллеры и настроить ограничения.
         </p>
+
+        <h2>Видеоурок</h2>
+
+<div class="video-preview" id="openVideo">
+  <div class="video-play">▶</div>
+  <img src="img/video-preview.jpg" alt="Видео превью" />
+</div>
+
+<!-- Модальное окно -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <button class="video-close" id="closeVideo">✕</button>
+
+    <div class="fake-player">
+      <div class="fake-screen">Видеоурок Blender Sprint</div>
+    </div>
+  </div>
+</div>
     
         <h2>FK и IK</h2>
         <ul class="list">
@@ -54,6 +72,18 @@
           <li>располагай контроллеры рядом с управляемой частью</li>
         </ul>
     
+        <div class="image-preview" id="openImage">
+          <img src="img/br.jpg" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/br.jpg" alt="Большое изображение" />
+          </div>
+        </div>
+
         <h2>Constraints</h2>
         <p>
           На этом этапе достаточно уверенно использовать IK Constraint и понимать,
@@ -216,8 +246,12 @@
         </ul>
     
         <div class="lesson-next">
-          <a class="btn lesson-next-btn" href="day-5.html">Следующий урок</a>
-          <img class="lesson-next-preview" src="img/5.png" alt="Превью следующего урока" />
+          <a class="btn btn-outline" href="assignments.html">Сдать задание</a>
+        
+          <div class="lesson-next-right">
+            <img class="lesson-next-preview" src="img/5.png" alt="Превью следующего урока" />
+            <a class="btn lesson-next-btn" href="day-5.html">Следующий урок</a>
+          </div>
         </div>
       </div>
     </main>

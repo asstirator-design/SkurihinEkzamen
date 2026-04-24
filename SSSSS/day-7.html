@@ -29,6 +29,24 @@
           используешь Cycles и экспортируешь анимацию в готовое видео.
           В конце у тебя будет законченный ролик.
         </p>
+
+        <h2>Видеоурок</h2>
+
+<div class="video-preview" id="openVideo">
+  <div class="video-play">▶</div>
+  <img src="img/video-preview.jpg" alt="Видео превью" />
+</div>
+
+<!-- Модальное окно -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <button class="video-close" id="closeVideo">✕</button>
+
+    <div class="fake-player">
+      <div class="fake-screen">Видеоурок Blender Sprint</div>
+    </div>
+  </div>
+</div>
     
         <h2>Что такое рендер</h2>
         <p>
@@ -158,8 +176,10 @@
           Теперь у тебя есть база, чтобы двигаться дальше.
         </p>
         <div class="lesson-next">
-          <a class="btn lesson-next-btn" href="complete.html">Завершить курс</a>
-          <img class="lesson-next-preview" src="img/7.png" alt="Финальный урок" />
+          <a class="btn btn-outline" href="assignments.html">Сдать задание</a>
+          <div class="lesson-next-right">
+            <a class="btn lesson-next-btn" href="complete.html">Завершить курс</a>
+          </div>
         </div>
       </div>
     </main>

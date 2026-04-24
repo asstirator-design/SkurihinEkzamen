@@ -30,6 +30,24 @@
           простые объекты (меши), изменять их форму и положение, а также назначать
           материалы. В конце урока ты соберешь свою первую простую 3D-сцену.
         </p>
+
+        <h2>Видеоурок</h2>
+
+<div class="video-preview" id="openVideo">
+  <div class="video-play">▶</div>
+  <img src="img/video-preview.jpg" alt="Видео превью" />
+</div>
+
+<!-- Модальное окно -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <button class="video-close" id="closeVideo">✕</button>
+
+    <div class="fake-player">
+      <div class="fake-screen">Видеоурок Blender Sprint</div>
+    </div>
+  </div>
+</div>
     
         <h2>Навигация в 3D-пространстве</h2>
         <p>
@@ -44,6 +62,18 @@
           </ul>
         </div>
     
+        <div class="image-preview" id="openImage">
+          <img src="img/bn.jpg" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/bn.jpg" alt="Большое изображение" />
+          </div>
+        </div>
+
         <h3>Фокус на объекте</h3>
         <ul class="list">
           <li>Выдели объект</li>
@@ -59,6 +89,32 @@
           </ul>
         </div>
     
+
+        <div class="image-preview" id="openImage">
+          <img src="img/rc.png" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/rc.png" alt="Большое изображение" />
+          </div>
+        </div>
+
+        <div class="image-preview" id="openImage">
+          <img src="img/sc.png" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/sc.png" alt="Большое изображение" />
+          </div>
+        </div>
+
+
         <h3>Перемещение, вращение, масштаб</h3>
         <p>Используются горячие клавиши:</p>
         <ul class="list">
@@ -102,6 +158,18 @@
           </ul>
         </div>
     
+        <div class="image-preview" id="openImage">
+          <img src="img/ac.png" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/ac.png" alt="Большое изображение" />
+          </div>
+        </div>
+
         <h3>Удаление объекта</h3>
         <ul class="list">
           <li>Выдели объект</li>
@@ -158,6 +226,18 @@
         <h2>Практика: создание простой сцены</h2>
         <p>Теперь нужно собрать небольшую локацию.</p>
     
+        <div class="image-preview" id="openImage">
+          <img src="img/cl.jpg" alt="Превью изображения" />
+        </div>
+        
+        <!-- Модальное окно -->
+        <div class="image-modal" id="imageModal">
+          <div class="image-modal-content">
+            <button class="image-close" id="closeImage">✕</button>
+            <img src="img/cl.jpg" alt="Большое изображение" />
+          </div>
+        </div>
+
         <h3>Шаг 1 — Основа (земля)</h3>
         <ul class="list">
           <li>Добавь <strong>Plane</strong> (Shift + A → Mesh → Plane)</li>
@@ -233,8 +313,12 @@
         </p>
     
         <div class="lesson-next">
-          <a class="btn lesson-next-btn" href="day-2.html">Следующий урок</a>
-          <img class="lesson-next-preview" src="img/2.png" alt="Превью следующего урока" />
+          <a class="btn btn-outline" href="assignments.html">Сдать задание</a>
+        
+          <div class="lesson-next-right">
+            <img class="lesson-next-preview" src="img/2.png" alt="Превью следующего урока" />
+            <a class="btn lesson-next-btn" href="day-2.html">Следующий урок</a>
+          </div>
         </div>
       </div>
     </main>
